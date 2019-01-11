@@ -8,20 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		181A2D3221E4C609000144EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181A2D3121E4C609000144EF /* AppDelegate.swift */; };
-		181A2D3421E4C609000144EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181A2D3321E4C609000144EF /* ViewController.swift */; };
 		181A2D3721E4C609000144EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181A2D3521E4C609000144EF /* Main.storyboard */; };
 		181A2D3921E4C60D000144EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 181A2D3821E4C60D000144EF /* Assets.xcassets */; };
 		181A2D3C21E4C60D000144EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181A2D3A21E4C60D000144EF /* LaunchScreen.storyboard */; };
+		181A2D4621E4E8FE000144EF /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181A2D4421E4E8FD000144EF /* SWRevealViewController.m */; };
+		181A2D4821E4F1DC000144EF /* backTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181A2D4721E4F1DC000144EF /* backTableVC.swift */; };
+		188AEA2521E7545600F8D787 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188AEA2421E7545600F8D787 /* ViewController.swift */; };
+		188AEA2721E758E000F8D787 /* profileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188AEA2621E758E000F8D787 /* profileViewController.swift */; };
+		188AEA2921E758EF00F8D787 /* addBlogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188AEA2821E758EF00F8D787 /* addBlogViewController.swift */; };
+		18A2F6C321E769CF0044007E /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A2F6C221E769CF0044007E /* AboutViewController.swift */; };
+		18A2F6C521E770660044007E /* contactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A2F6C421E770660044007E /* contactUsViewController.swift */; };
+		18A2F6C821E78FF40044007E /* CustomButtonText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A2F6C721E78FF30044007E /* CustomButtonText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		181A2D2E21E4C609000144EF /* Bloger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bloger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		181A2D3121E4C609000144EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		181A2D3321E4C609000144EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		181A2D3621E4C609000144EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		181A2D3821E4C60D000144EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		181A2D3B21E4C60D000144EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		181A2D3D21E4C60D000144EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		181A2D4321E4E8FD000144EF /* Bloger-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bloger-Bridging-Header.h"; sourceTree = "<group>"; };
+		181A2D4421E4E8FD000144EF /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		181A2D4521E4E8FD000144EF /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		181A2D4721E4F1DC000144EF /* backTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = backTableVC.swift; sourceTree = "<group>"; };
+		188AEA2421E7545600F8D787 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		188AEA2621E758E000F8D787 /* profileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileViewController.swift; sourceTree = "<group>"; };
+		188AEA2821E758EF00F8D787 /* addBlogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addBlogViewController.swift; sourceTree = "<group>"; };
+		18A2F6C221E769CF0044007E /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		18A2F6C421E770660044007E /* contactUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contactUsViewController.swift; sourceTree = "<group>"; };
+		18A2F6C721E78FF30044007E /* CustomButtonText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +71,20 @@
 			isa = PBXGroup;
 			children = (
 				181A2D3121E4C609000144EF /* AppDelegate.swift */,
-				181A2D3321E4C609000144EF /* ViewController.swift */,
+				188AEA2421E7545600F8D787 /* ViewController.swift */,
+				181A2D4721E4F1DC000144EF /* backTableVC.swift */,
 				181A2D3521E4C609000144EF /* Main.storyboard */,
 				181A2D3821E4C60D000144EF /* Assets.xcassets */,
 				181A2D3A21E4C60D000144EF /* LaunchScreen.storyboard */,
 				181A2D3D21E4C60D000144EF /* Info.plist */,
+				181A2D4521E4E8FD000144EF /* SWRevealViewController.h */,
+				181A2D4421E4E8FD000144EF /* SWRevealViewController.m */,
+				181A2D4321E4E8FD000144EF /* Bloger-Bridging-Header.h */,
+				188AEA2621E758E000F8D787 /* profileViewController.swift */,
+				188AEA2821E758EF00F8D787 /* addBlogViewController.swift */,
+				18A2F6C221E769CF0044007E /* AboutViewController.swift */,
+				18A2F6C421E770660044007E /* contactUsViewController.swift */,
+				18A2F6C721E78FF30044007E /* CustomButtonText.swift */,
 			);
 			path = Bloger;
 			sourceTree = "<group>";
@@ -96,6 +121,7 @@
 				TargetAttributes = {
 					181A2D2D21E4C609000144EF = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -135,8 +161,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				181A2D3421E4C609000144EF /* ViewController.swift in Sources */,
 				181A2D3221E4C609000144EF /* AppDelegate.swift in Sources */,
+				181A2D4821E4F1DC000144EF /* backTableVC.swift in Sources */,
+				188AEA2521E7545600F8D787 /* ViewController.swift in Sources */,
+				18A2F6C521E770660044007E /* contactUsViewController.swift in Sources */,
+				18A2F6C821E78FF40044007E /* CustomButtonText.swift in Sources */,
+				18A2F6C321E769CF0044007E /* AboutViewController.swift in Sources */,
+				188AEA2721E758E000F8D787 /* profileViewController.swift in Sources */,
+				188AEA2921E758EF00F8D787 /* addBlogViewController.swift in Sources */,
+				181A2D4621E4E8FE000144EF /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +315,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Bloger/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -290,6 +324,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Hivelet.Bloger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bloger/Bloger-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -299,6 +335,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Bloger/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -307,6 +344,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Hivelet.Bloger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bloger/Bloger-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
