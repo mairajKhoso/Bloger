@@ -7,19 +7,17 @@
 //
 
 import UIKit
-
+import FirebaseDatabase
 class addBlogViewController: UIViewController,UITextViewDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate {
 
     @IBOutlet weak var blogTitle: UITextView!
     @IBOutlet weak var blogDescription: UITextView!
     @IBOutlet weak var imgView: UIImageView!
     @IBOutlet weak var SaveBtnClick: button!
-    
     var imgPicker = UIImagePickerController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // UIText view delegate is added for textview place holder and when user tapp on it place holder just removed
         blogTitle.delegate = self
         blogTitle.text = "Enter title here"
@@ -68,16 +66,6 @@ class addBlogViewController: UIViewController,UITextViewDelegate,UINavigationCon
         imgView.image = chosenImage
         dismiss(animated:true, completion: nil)
 
-//        let _ : UIImage = image
-//        self.imgView.contentMode = .scaleAspectFit
-//        imgView.image = image
-
     }
-//    func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, editingInfo: NSDictionary!) {
-//        let _ : UIImage = image
-//        self.imgView.contentMode = .scaleAspectFit
-//        imgView.image = image
-//
-//
-//}
+
 }
