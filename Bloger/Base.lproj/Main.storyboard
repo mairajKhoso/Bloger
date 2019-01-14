@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EtP-P0-cXY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TlN-fx-L2z">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -108,7 +108,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1528" y="336"/>
+            <point key="canvasLocation" x="-88" y="341"/>
         </scene>
         <!--Reveal View Controller-->
         <scene sceneID="Jyu-D6-5SO">
@@ -127,7 +127,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EYJ-y8-4m1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="900" y="-583"/>
+            <point key="canvasLocation" x="-812" y="-583"/>
         </scene>
         <!--Back TableVC-->
         <scene sceneID="YUp-cP-dcu">
@@ -159,7 +159,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RNE-cf-dPI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1803.75" y="-583.09859154929575"/>
+            <point key="canvasLocation" x="99" y="-594"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="2hs-zW-sOR">
@@ -183,7 +183,156 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eyW-jn-b5t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2632.5" y="-583.09859154929575"/>
+            <point key="canvasLocation" x="898" y="-595"/>
+        </scene>
+        <!--Account View Controller-->
+        <scene sceneID="OG5-78-sj3">
+            <objects>
+                <viewController id="TlN-fx-L2z" customClass="AccountViewController" customModule="Bloger" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PgL-Zb-ug7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blog2" translatesAutoresizingMaskIntoConstraints="NO" id="b0t-MB-Uiu">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Hem-lZ-PcJ">
+                                <rect key="frame" x="65" y="61" width="191" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="SignIn"/>
+                                    <segment title="SignUp"/>
+                                </segments>
+                                <connections>
+                                    <action selector="signInSelectorChanged:" destination="TlN-fx-L2z" eventType="valueChanged" id="Kk8-3C-ULH"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SignIn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S5E-Zr-O28">
+                                <rect key="frame" x="65" y="120" width="191" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your email here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vbp-gG-Gol">
+                                <rect key="frame" x="65" y="205" width="191" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your passwrod here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZVf-g0-Ha6">
+                                <rect key="frame" x="65" y="269" width="191" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEA-yP-7sm">
+                                <rect key="frame" x="65" y="397" width="191" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
+                                <state key="normal" title="SignIn">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="signInBtnClicked:" destination="TlN-fx-L2z" eventType="touchUpInside" id="oCo-o5-Bin"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="b0t-MB-Uiu" firstAttribute="leading" secondItem="0ho-f7-Upd" secondAttribute="leading" id="7vw-yC-i4M"/>
+                            <constraint firstItem="0ho-f7-Upd" firstAttribute="trailing" secondItem="b0t-MB-Uiu" secondAttribute="trailing" id="SDW-Wb-80z"/>
+                            <constraint firstItem="0ho-f7-Upd" firstAttribute="top" secondItem="b0t-MB-Uiu" secondAttribute="top" constant="20" id="hTS-4f-ioU"/>
+                            <constraint firstItem="0ho-f7-Upd" firstAttribute="bottom" secondItem="b0t-MB-Uiu" secondAttribute="bottom" id="yND-AT-201"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0ho-f7-Upd"/>
+                    </view>
+                    <connections>
+                        <outlet property="SignInLbl" destination="S5E-Zr-O28" id="zj7-lf-n3N"/>
+                        <outlet property="SignInSelector" destination="Hem-lZ-PcJ" id="ZYh-Om-4aX"/>
+                        <outlet property="emailTxtField" destination="vbp-gG-Gol" id="PU5-hb-gIq"/>
+                        <outlet property="passwordTxtField" destination="ZVf-g0-Ha6" id="J6R-T9-2G9"/>
+                        <outlet property="signInBtn" destination="gEA-yP-7sm" id="Hbf-Lm-kF2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b11-PJ-9Fc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2126" y="-767"/>
+        </scene>
+        <!--Sign Up View Controller-->
+        <scene sceneID="8oh-32-MMJ">
+            <objects>
+                <viewController id="Dsf-9k-R05" customClass="SignUpViewController" customModule="Bloger" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cIA-Vs-0vs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blog2" translatesAutoresizingMaskIntoConstraints="NO" id="GEq-Nb-VAI">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XfO-gp-Ym6">
+                                <rect key="frame" x="65" y="100" width="188" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Rf-oj-x0s">
+                                <rect key="frame" x="65" y="252" width="188" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter your email here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QHU-Dc-3ng" customClass="TxtField" customModule="Bloger" customModuleProvider="target">
+                                <rect key="frame" x="65" y="133" width="188" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter your password here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ffZ-cR-Wfy" customClass="TxtField" customModule="Bloger" customModuleProvider="target">
+                                <rect key="frame" x="65" y="288" width="188" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4rc-ym-dgH" firstAttribute="bottom" secondItem="GEq-Nb-VAI" secondAttribute="bottom" id="0t3-xl-WNb"/>
+                            <constraint firstItem="4rc-ym-dgH" firstAttribute="trailing" secondItem="GEq-Nb-VAI" secondAttribute="trailing" id="smA-DM-edg"/>
+                            <constraint firstItem="GEq-Nb-VAI" firstAttribute="leading" secondItem="4rc-ym-dgH" secondAttribute="leading" id="tU0-wW-0aF"/>
+                            <constraint firstItem="4rc-ym-dgH" firstAttribute="top" secondItem="GEq-Nb-VAI" secondAttribute="top" constant="20" id="tbE-YR-saZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4rc-ym-dgH"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ka2-Sx-Vbv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2648" y="-1492"/>
+        </scene>
+        <!--Sign In View Controller-->
+        <scene sceneID="f9n-hD-JFh">
+            <objects>
+                <viewController id="51f-wf-P6g" customClass="SignInViewController" customModule="Bloger" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XZi-4T-6cc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="3Uc-ns-71g"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VLx-Jd-FvI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1991" y="-1473"/>
         </scene>
         <!--Add Blog View Controller-->
         <scene sceneID="UEG-u6-kjX">
@@ -216,31 +365,41 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grr-ga-pC3" customClass="button" customModule="Bloger" customModuleProvider="target">
                                 <rect key="frame" x="64" y="251" width="190" height="34"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Gallery">
+                                <state key="normal" title="Open Gallery">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="galleryBtnClick:" destination="EtP-P0-cXY" eventType="touchUpInside" id="Rsm-r2-2jH"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cpI-Qw-1LC" customClass="TxtView" customModule="Bloger" customModuleProvider="target">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="100" contentMode="scaleToFill" text="Please enter title here" translatesAutoresizingMaskIntoConstraints="NO" id="cpI-Qw-1LC" customClass="TxtView" customModule="Bloger" customModuleProvider="target">
                                 <rect key="frame" x="64" y="320" width="190" height="45.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="EtP-P0-cXY" id="8zk-Ax-BrI"/>
+                                </connections>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Q4L-cV-AzK" customClass="TxtView" customModule="Bloger" customModuleProvider="target">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="101" contentMode="scaleToFill" text="Write description about your blog" translatesAutoresizingMaskIntoConstraints="NO" id="Q4L-cV-AzK" customClass="TxtView" customModule="Bloger" customModuleProvider="target">
                                 <rect key="frame" x="64" y="374" width="190" height="113.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="EtP-P0-cXY" id="oND-gK-dHx"/>
+                                </connections>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d5g-Fu-ANK" customClass="button" customModule="Bloger" customModuleProvider="target">
                                 <rect key="frame" x="64" y="514" width="190" height="34"/>
                                 <state key="normal" title="Save">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="saveBtnClick:" destination="EtP-P0-cXY" eventType="touchUpInside" id="i9X-hP-wom"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -470,7 +629,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yAI-MJ-Ke8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="698" y="344"/>
+            <point key="canvasLocation" x="-861" y="329"/>
         </scene>
     </scenes>
     <resources>

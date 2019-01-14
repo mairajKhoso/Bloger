@@ -32,7 +32,15 @@ class TxtView: UITextView {
         //layer.cornerRadius = frame.height/2
     }
 }
-
+class TxtField:UITextField
+{
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        layer.borderColor = UIColor.white.cgColor
+        layer.borderWidth = 1/UIScreen.main.nativeScale
+    }
+}
 class Image : UIImageView{
     override func awakeFromNib() {
         super.awakeFromNib()
